@@ -8,8 +8,8 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
+    # ports:
+    #   - "5432:5432"
     networks:
       - pairing-network
     healthcheck:
@@ -29,8 +29,8 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       JWT_SECRET: ${JWT_SECRET}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-    ports:
-      - "3000:3000"
+    # ports:
+    #   - "3000:3000"
     depends_on:
       db:
         condition: service_healthy
@@ -45,8 +45,8 @@ services:
       args:
         VITE_API_URL: http://localhost:3000
     container_name: pairing-frontend
-    ports:
-      - "80:80"
+    # ports:
+    #   - "80:80"
     depends_on:
       - backend
     networks:
