@@ -1,0 +1,14 @@
+{
+  "name": "enroot-qr-pairing",
+  "version": "1.0.0",
+  "description": "Arts and crafts event participant pairing webapp",
+  "scripts": {
+    "setup": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../scripts && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "generate-qr": "cd scripts && npm install && node generate-qr.js"
+  },
+  "keywords": ["qr", "pairing", "event", "arts-and-crafts"],
+  "author": "",
+  "license": "MIT"
+}

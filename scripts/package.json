@@ -1,0 +1,12 @@
+{
+  "name": "qr-generator",
+  "version": "1.0.0",
+  "description": "Generate QR code for event entrance",
+  "scripts": {
+    "generate": "node generate-qr.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3",
+    "dotenv": "^16.3.1"
+  }
+}

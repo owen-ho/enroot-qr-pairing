@@ -1,0 +1,11 @@
+node_modules/
+.env
+*.log
+.DS_Store
+dist/
+build/
+*.sqlite
+.vscode/
+frontend/node_modules/
+backend/node_modules/
+qr-code.png
